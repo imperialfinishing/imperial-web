@@ -475,61 +475,86 @@ grid-template-columns: repeat(2, 1fr);
     width:220px;
 }
 
-/* FOOTER */
+/* ==========================
+   FOOTER
+========================== */
 .footer{
-    background: #050b18;
-    color: white;
-    padding: 70px 8% 20px;
+    background:#0F172A;
+    color:white;
+    padding:70px 8% 20px;
 }
 
 .footer-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
 }
 
-.footer-box h2{
-    font-size: 30px;
-    margin-bottom: 20px;
+.footer-box h2,
+.footer-box h3{
+    margin-bottom:20px;
 }
 
 .footer-box h2 span{
-    color: #D4AF37;
+    color:#D4AF37;
 }
 
-.footer-box h3{
-    margin-bottom: 20px;
-    color: #D4AF37;
+.footer-box p,
+.footer-box li{
+    color:#ccc;
+    line-height:1.8;
 }
 
-.footer-box p{
-    line-height: 1.8;
-    color: #ccc;
-}
 .footer-box ul{
-    list-style: none;
+    list-style:none;
+    padding:0;
 }
 
 .footer-box ul li{
-    margin-bottom: 12px;
+    margin-bottom:10px;
 }
 
-.footer-box a{
-    color: #ccc;
-    text-decoration: none;
+.footer-box ul li a{
+    color:#ccc;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.footer-box a:hover{
-    color: #D4AF37;
+.footer-box ul li a:hover{
+    color:#D4AF37;
+}
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-links a{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1E293B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#D4AF37;
+    color:#0F172A;
 }
 
 .footer-bottom{
-    border-top: 1px solid rgba(255, 255, 255, .2);
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    color: #aaa;
+    margin-top:50px;
+    padding-top:20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.15);
 }
+
 
 /*WHATSAPP BUTTON*/
 .whatsapp {
