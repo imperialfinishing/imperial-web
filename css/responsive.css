@@ -1,0 +1,57 @@
+@media(max-width: 768px) {
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #white;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #0F172A;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+   
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-content{
+        font-size: 32px;
+    }
+
+    .about-features{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+}
