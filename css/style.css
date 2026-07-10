@@ -630,27 +630,24 @@ grid-template-columns: repeat(2, 1fr);
     transform: translateY(0);
 }
 
-#topBtn{
-    position: fixed;
-    bottom: 100px;
-    right: 25px;
-    width: 55px;
-    height: 55px;
-    border: none;
-    border-radius: 50%;
-    background: #0F172A;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
-    transition: .3s;
-    z-index: 999;
+#backToTop{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#D4AF37;
+    color:#0F172A;
+    cursor:pointer;
+    font-size:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
 }
 
-#topBtn:hover{
-    background: #D4AF37;
-    color: #000;
+#backToTop:hover{
+    transform:translateY(-5px);
 }
 
 @keyframes fadeUp{
