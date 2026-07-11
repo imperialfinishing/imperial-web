@@ -724,38 +724,22 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 /*COUNTER SECTION*/
-.counter{
-    background: #0F172A;
-    padding: 80px 8%;
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    padding:80px 8%;
+    background:#0F172A;
+    color:white;
+    text-align:center;
 }
 
-.counter-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    text-align: center;
+.stat h2{
+    color:#D4AF37;
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-.counter-box{
-    color: white;
-}
-
-.counter-box i{
-    font-size: 45px;
-    color: #D4AF37;
-    margin-bottom: 20px;
-}
-
-.counter-box h2{
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #D4AF37;
-}
-
-.counter-box p{
-    font-size: 18px;
-    color: #ddd;
-}
 
 /*CTA SECTION*/
 .cta{
