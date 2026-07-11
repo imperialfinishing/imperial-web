@@ -218,6 +218,9 @@ faqItems.forEach(item => {
 // PRELOADER
 // ==========================
 window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("preloader").style.display = "none";
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.style.display = "none";
+    }
 });
 
