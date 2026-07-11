@@ -122,6 +122,7 @@ viewButtons.forEach((button,index)=>{
 
 });
 
+if (nextBtn && prevBtn) {
 nextBtn.addEventListener("click",()=>{
 
     currentIndex++;
@@ -149,6 +150,7 @@ prevBtn.addEventListener("click",()=>{
     openProject(currentIndex);
 
 });
+}
 
 closePopup.addEventListener("click",()=>{
 
