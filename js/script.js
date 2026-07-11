@@ -152,11 +152,11 @@ prevBtn.addEventListener("click",()=>{
 });
 }
 
-closePopup.addEventListener("click",()=>{
-
-    popup.style.display="none";
-
-});
+if (closePopup) {
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+}
 
 popup.addEventListener("click",(e)=>{
 
