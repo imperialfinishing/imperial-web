@@ -217,7 +217,7 @@ faqItems.forEach(item => {
 // ==========================
 // PRELOADER
 // ==========================
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("preloader").style.display = "none";
 });
 
