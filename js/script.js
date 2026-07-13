@@ -2,11 +2,10 @@ alert("Welcome to Imperial Finishing!");
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
-if(menuBtn && navLinks) {
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
-}
+
 
 // SCROLL REVEAL ANIMATION //
 const hiddenElements = document.querySelectorAll(".hidden");
