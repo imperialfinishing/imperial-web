@@ -2,9 +2,11 @@ alert("Welcome to Imperial Finishing!");
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
+if (menuBtn && navLinks) {
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
+}
 
 
 // SCROLL REVEAL ANIMATION //
@@ -35,7 +37,7 @@ topBtn.addEventListener("click", () => {
         behavior:"smooth"
     });
 });
-}
+
 
 //COUNTER ANIMATION
 const counters = document.querySelectorAll('.count');
@@ -152,6 +154,11 @@ prevBtn.addEventListener("click",() => {
     openProject(currentIndex);
 
 });
+}
+if (closePopup) {
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
 }
 
 if (popup) {
