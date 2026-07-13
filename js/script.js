@@ -100,7 +100,6 @@ const nextBtn = document.querySelector(".next");
 let currentIndex = 0;
 
 function openProject(index){
-    if (!popup) return;
 
     currentIndex = index;
 
@@ -157,14 +156,14 @@ prevBtn.addEventListener("click",() => {
 }
 
 if (popup) {
-    popup.addEventListener("click", (e) => {
+    popup.addEventListener("click", e => {
         if (e.target === popup) {
             popup.style.display = "none";
         }
     });
 }
 
-document.addEventListener("keydown",(e)=>{
+document.addEventListener("keydown",e => {
 
     if(e.key==="Escape"){
 
