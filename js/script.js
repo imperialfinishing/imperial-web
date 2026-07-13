@@ -127,7 +127,7 @@ viewButtons.forEach((button,index) => {
 });
 
 if (nextBtn && prevBtn) {
-nextBtn.addEventListener("click",()=>{
+nextBtn.addEventListener("click", () =>{
 
     currentIndex++;
 
@@ -156,14 +156,8 @@ prevBtn.addEventListener("click",() => {
 });
 }
 
-if (closePopup) {
-    closePopup.addEventListener("click", () => {
-            popup.style.display = "none"; 
-    });
-}
-
 if (popup) {
-    popup.addEventListener("click", e => {
+    popup.addEventListener("click", (e) => {
         if (e.target === popup) {
             popup.style.display = "none";
         }
