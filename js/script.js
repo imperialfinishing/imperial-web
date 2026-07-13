@@ -23,7 +23,7 @@ hiddenElements.forEach((element) => {
 const topBtn = document.getElementById("topBtn");
 window.addEventListener("scroll", function(){
     if(window.scrollY > 300){
-        topBtn.style.display = "block";
+        topBtn.style.display = "flex";
     }else{
         topBtn.style.display = "none"
     }
