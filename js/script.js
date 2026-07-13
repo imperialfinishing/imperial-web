@@ -2,9 +2,11 @@ alert("Welcome to Imperial Finishing!");
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
-menuBtn.addEventListener("click", function() {
+if(menuBtn && navLinks) {
+menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
+}
 
 // SCROLL REVEAL ANIMATION //
 const hiddenElements = document.querySelectorAll(".hidden");
@@ -19,21 +21,22 @@ hiddenElements.forEach((element) => {
     observer.observe(element);
 });
 
-
+// BACK TO TOP BUTTON //
 const topBtn = document.getElementById("topBtn");
 window.addEventListener("scroll", function(){
     if(window.scrollY > 300){
         topBtn.style.display = "flex";
-    }else{
+           }else{
         topBtn.style.display = "none"
-    }
+           }
 });
-topBtn.addEventListener("click", function(){
+topBtn.addEventListener("click", () => {
     window.scrollTo({
         top:0,
         behavior:"smooth"
     });
 });
+}
 
 //COUNTER ANIMATION
 const counters = document.querySelectorAll('.count');
@@ -97,6 +100,7 @@ const nextBtn = document.querySelector(".next");
 let currentIndex = 0;
 
 function openProject(index){
+    if (!popup) return;
 
     currentIndex = index;
 
@@ -110,9 +114,9 @@ function openProject(index){
 
 }
 
-viewButtons.forEach((button,index)=>{
+viewButtons.forEach((button,index) => {
 
-    button.addEventListener("click",(e)=>{
+    button.addEventListener("click", e => {
 
         e.preventDefault();
 
@@ -137,7 +141,7 @@ nextBtn.addEventListener("click",()=>{
 
 });
 
-prevBtn.addEventListener("click",()=>{
+prevBtn.addEventListener("click",() => {
 
     currentIndex--;
 
@@ -152,8 +156,14 @@ prevBtn.addEventListener("click",()=>{
 });
 }
 
+if (closePopup) {
+    closePopup.addEventListener("click", () => {
+            popup.style.display = "none"; 
+    });
+}
+
 if (popup) {
-    popup.addEventListener("click", (e) => {
+    popup.addEventListener("click", e => {
         if (e.target === popup) {
             popup.style.display = "none";
         }
