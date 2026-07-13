@@ -170,15 +170,6 @@ document.addEventListener("keydown",(e)=>{
 
 });
 
-if (topBtn) {
-    topBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-}
-
 // ==========================
 // STICKY NAVBAR
 // ==========================
