@@ -688,7 +688,7 @@ grid-template-columns: repeat(2, 1fr);
     transition: .3s;
     font-size: 32px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, .25);
-    z-index: 1000;
+    z-index: 999;
 }
 
 .whatsapp:hover {
@@ -714,7 +714,7 @@ grid-template-columns: repeat(2, 1fr);
 
 #topBtn{
     position:fixed;
-    bottom:30px;
+    bottom:100px;  /* Move it above WhatsApp */
     right:30px;
     width:55px;
     height:55px;
@@ -729,7 +729,7 @@ grid-template-columns: repeat(2, 1fr);
     align-items:center;
     box-shadow:0 8px 20px rgba(0,0,0,.25);
     transition:all .3s ease;
-    z-index:99999;
+    z-index:999;
 }
 
 #topBtn:hover{
