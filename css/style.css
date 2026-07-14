@@ -729,7 +729,7 @@ grid-template-columns: repeat(2, 1fr);
     align-items:center;
     box-shadow:0 8px 20px rgba(0,0,0,.25);
     transition:all .3s ease;
-    z-index:999;
+    z-index:99999;
 }
 
 #topBtn:hover{
