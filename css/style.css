@@ -715,7 +715,7 @@ grid-template-columns: repeat(2, 1fr);
 #topBtn{
     position:fixed;
     bottom:100px;  /* Move it above WhatsApp */
-    right:30px;
+    right:25px;
     width:55px;
     height:55px;
     border:none;
