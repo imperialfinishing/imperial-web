@@ -1,5 +1,3 @@
-alert("Welcome to Imperial Finishing!");
-
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 if (menuBtn && navLinks) {
