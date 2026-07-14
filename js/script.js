@@ -223,3 +223,22 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// ==========================
+// CONTACT FORM
+// ==========================
+
+const contactForm = document.querySelector(".contact-form");
+const submitBtn = document.getElementById("submitBtn");
+
+if (contactForm && submitBtn) {
+
+    contactForm.addEventListener("submit", () => {
+
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+        submitBtn.disabled = true;
+
+    });
+
+}
+
