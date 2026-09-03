@@ -22,6 +22,7 @@ hiddenElements.forEach((element) => {
 
 // BACK TO TOP BUTTON //
 const topBtn = document.getElementById("topBtn");
+if(topBtn) {
 window.addEventListener("scroll", function(){
     if(window.scrollY > 300){
         topBtn.style.display = "flex";
@@ -35,6 +36,7 @@ topBtn.addEventListener("click", () => {
         behavior:"smooth"
     });
 });
+}
 
 
 //COUNTER ANIMATION
